@@ -14,6 +14,13 @@ body {
   width: 980px;
   margin: 0 auto;
 }
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: 600px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
 
 h2 {
   font-size: 30px;
@@ -30,10 +37,10 @@ a:hover {
 
 /* 共通部分 ここまで*/
 .hero {
-  background-image: url("../images/hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/logo.png"), url("../images/hero.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 31px 38px, center;
+  background-size: auto, cover;
   height: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,6 +55,13 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media (max-width: 600px) {
+  .hero {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
 }
 .hero p {
   color: #ffffff;
@@ -151,6 +165,20 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.course .courde-button {
+  position: relative;
+}
+.course .courde-button span {
+  position: absolute;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 26px;
+  top: 0;
+  left: 0;
+}
+.course .courde-button img {
+  width: 100%;
+}
 
 .after {
   margin-top: 115px;
@@ -210,7 +238,6 @@ a:hover {
   max-width: 720px;
 }
 .entry .Form-Item {
-  border-top: 1px solid #ddd;
   padding-top: 24px;
   padding-bottom: 24px;
   width: 100%;
@@ -233,7 +260,7 @@ a:hover {
   margin-bottom: auto;
 }
 .entry .Form-Item-Label-Required {
-  border-radius: 6px;
+  border-radius: 8px;
   margin-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -275,7 +302,7 @@ a:hover {
   font-size: 18px;
 }
 .entry .Form-Btn {
-  border-radius: 6px;
+  border-radius: 10px;
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
