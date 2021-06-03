@@ -58,9 +58,8 @@ a:hover {
 }
 @media (max-width: 600px) {
   .hero {
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: 31px 38px, center top;
   }
 }
 .hero p {
@@ -90,6 +89,7 @@ a:hover {
   margin-top: 40px;
   padding: 13px 64px;
   background-color: #dee9fe;
+  max-width: 100%;
 }
 .program p {
   font-size: 16px;
@@ -103,6 +103,12 @@ a:hover {
   background: left top no-repeat;
   background-size: 48px auto;
   font-size: 20px;
+}
+@media (max-width: 600px) {
+  .program li {
+    padding-left: 60px;
+    background-size: 40px auto;
+  }
 }
 .program li:nth-child(1) {
   background-image: url("../images/point1.jpg");
@@ -144,8 +150,30 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 600px) {
+  .project ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .project li {
   text-align: center;
+}
+@media (max-width: 600px) {
+  .project li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project li.arrow {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 .project li p {
   margin-top: 24px;
