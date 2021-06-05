@@ -189,32 +189,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.course .course-button {
-  background-image: url("../images/a_engineer.jpg");
-  width: 250px;
-  height: 200px;
-  text-align: center;
-}
-.course .course-button span {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 26px;
-}
-.course .course-button p {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
-  background-color: #183061;
-  width: 200px;
-  height: 51px;
-  border-radius: 17px;
-  margin-top: 54px;
-  margin-left: 24px;
-  padding-top: 12px;
 }
 
 .after {
