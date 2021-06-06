@@ -131,25 +131,21 @@
 
         <section class="entry">
             <h2>応募はこちらから</h2>
-            <div class="Form">
-                <div class="Form-Item">
-                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-                    <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+            <form action="#">
+                <div>
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="your-name">
                 </div>
-                <div class="Form-Item">
-                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
-                    <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="your-email">
                 </div>
-                <div class="Form-Item">
-                    <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-                    <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+                <div>
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="your-message"></textarea>
                 </div>
-                <div class="Form-Item">
-                    <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-                    <textarea class="Form-Item-Textarea"></textarea>
-                </div>
-                <input type="submit" class="Form-Btn" value="送信する">
-            </div>
+                <input type="submit" class="button" value="送信">
+            </form>
         </section>
 
     </div>
