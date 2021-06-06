@@ -101,6 +101,7 @@ a:hover {
 
 .program p {
   font-size: 16px;
+  text-align: left;
 }
 
 .program ul {
@@ -119,6 +120,7 @@ a:hover {
   .program li {
     padding-left: 60px;
     background-size: 40px auto;
+    text-align: left;
   }
 }
 
@@ -145,8 +147,18 @@ a:hover {
 .recommend li {
   background: url("../images/check.png") no-repeat 0 1px;
   padding-left: 50px;
-  padding-bottom: 20px;
   font-size: 20px;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .recommend li {
+    font-size: 18px;
+  }
+}
+
+.recommend li:nth-child(2n-1) {
+  padding-bottom: 20px;
 }
 
 .project {
@@ -221,15 +233,24 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.course li {
-  max-width: 100%;
+@media (max-width: 600px) {
+  .course ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .course li {
+    margin-bottom: 54px;
+  }
 }
 
 .after {
@@ -273,6 +294,10 @@ a:hover {
   border-right: 15px solid #fffdc0;
 }
 
+.after-content p {
+  text-align: left;
+}
+
 .conditions {
   margin-top: 110px;
   background-color: #dee9fe;
@@ -287,46 +312,51 @@ a:hover {
   padding: 20px;
 }
 
+.conditions ul li {
+  text-align: left;
+}
+
 .entry {
   margin-top: 50px;
 }
 
 .entry form div {
   margin-bottom: 14px;
+  text-align: left;
 }
 
-.entry label {
+.entry form label {
   margin-bottom: 10px;
   display: block;
 }
 
-.entry input[type="text"],
-.entry input[type="email"],
-.entry textarea {
+.entry form input[type="text"],
+.entry form input[type="email"],
+.entry form textarea {
   border: 1px #555555 solid;
   border-radius: 5px;
   padding: 10px;
 }
 
-.entry input[type="text"],
-.entry input[type="email"] {
+.entry form input[type="text"],
+.entry form input[type="email"] {
   width: 100%;
   max-width: 240px;
 }
 
-.entry textarea {
+.entry form textarea {
   width: 100%;
   max-width: 480px;
   height: 6rem;
 }
 
-.entry input[type="submit"] {
+.entry form input[type="submit"] {
   border: none;
   cursor: pointer;
   line-height: 1;
 }
 
-.entry .button {
+.entry form .button {
   color: #ffffff;
   background-color: #183061;
   border-radius: 5px;
