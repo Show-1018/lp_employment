@@ -17,7 +17,7 @@ body{
     margin: 0 auto;
 
     @media(max-width:600px){
-        max-width: 600px;
+        width: 100%;
         padding: 0 20px;
         text-align: center;
     }
@@ -203,6 +203,14 @@ a {
     li{
         @media(max-width:600px){
             margin-bottom: 54px;
+        }
+    }
+
+    &-button{
+        &__img{
+            @media(max-width:600px){
+                width: 100%;
+            }
         }
     }
 
