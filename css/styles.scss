@@ -60,8 +60,16 @@ a {
         font-size: 36px;
         font-weight: bold;
 
+        @media(max-width:600px){
+            font-size: 24px;
+        }
+
         span{
             font-size: 48px;
+
+            @media(max-width:600px){
+                font-size: 36px;
+            }
         }
     }
 
@@ -69,6 +77,10 @@ a {
         color: #ffffff;
         font-size: 72px;
         font-weight: bold;
+
+        @media(max-width:600px){
+            font-size: 46px;
+        }
     }
 
     h2{
@@ -78,6 +90,10 @@ a {
         margin-top: 40px;
         padding: 0.3em 0.5em;
         background: linear-gradient(to top, #be8f27, #ffc23e);
+
+        @media(max-width:600px){
+            font-size: 13px;
+        }
     }
 }
 
@@ -87,9 +103,24 @@ a {
     background-color: #dee9fe;
     max-width: 100%;
 
+    @media(max-width:600px){
+        padding:13px 12px;
+    }
+
+    h2{
+        @media(max-width:600px){
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+
     p{
         font-size: 16px;
         text-align: left;
+
+        @media(max-width:600px){
+            padding-top: 24px;
+        }
     }
 
     ul{
@@ -127,6 +158,10 @@ a {
         padding:40px;
         background-color: #fffdc0;
         column-count: 2;
+
+        @media(max-width:600px){
+            column-count: auto;
+        }
     }
 
     li{
@@ -142,6 +177,16 @@ a {
 
     li:nth-child(2n-1) {
         padding-bottom: 20px;
+
+        @media(max-width:600px){
+            padding-bottom: 0px;
+        }
+    }
+
+    @media(max-width:600px){
+        li:not(:nth-child(4)){
+            padding-bottom: 20px;
+        }
     }
 }
 
@@ -181,6 +226,7 @@ a {
 
             @media(max-width:600px){
                 margin-left: 24px;
+                font-size: 16px;
             }
         }
     }
@@ -259,6 +305,11 @@ a {
     h2{
         padding-top:20px;
         padding-left: 20px;
+
+            @media(max-width:600px){
+                font-size: 24px;
+                text-align: left;
+            }
     }
 
     ul{
@@ -276,6 +327,7 @@ a {
     form{
 
     div{
+        margin-top: 24px;
         margin-bottom: 14px;
         text-align: left;
     }
@@ -330,5 +382,9 @@ a {
         color: #ffffff;
         font-size: 18px;
         padding-top: 33px;
+
+        @media(max-width:600px){
+            font-size: 12px;
+        }
     }
 }
